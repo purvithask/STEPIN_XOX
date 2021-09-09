@@ -12,59 +12,59 @@ void setUp(){
 void tearDown(){
 
 }
-char sq_position[10];
+char sq_position[24];
 void board(void){
-    sq_position[10]= "XXX......" || "OOO......";
+    sq_position[24]= "XXX......" || "OOO......";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void board1(void){
-    sq_position[10]= "...XXX..." || "...OOO...";
+    sq_position[24]= "...XXX..." || "...OOO...";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void board2(void){
-   sq_position[10]= "......XXX" || "......OOO";
+   sq_position[24]= "......XXX" || "......OOO";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void board3(void){
-    sq_position[10]= "X..X..X.." || "O..O..O..";
+    sq_position[24]= "X..X..X.." || "O..O..O..";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void board4(void){
-   sq_position[10]= ".X..X..X." || ".O..O..O.";
+   sq_position[24]= ".X..X..X." || ".O..O..O.";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
     
 }
 
 void board5(void){
-   sq_position[10]= "..X..X..X" || "..O..O..O";
+   sq_position[24]= "..X..X..X" || "..O..O..O";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void board6(void){
-   sq_position[10]= "X...X...X" || "O...O...O";
+   sq_position[24]= "X...X...X" || "O...O...O";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void board7(void){
-   sq_position[10]= "..X.X.X.." || "..O.O.O..";
+   sq_position[24]= "..X.X.X.." || "..O.O.O..";
     
     TEST_ASSERT_EQUAL(1,checkwin(sq_position));
 }
 
 void test_Checkdraw()
 {
-    char sq_position[10]={'0','O','X','O','o','X','O','X','O','X'};
+    char sq_position[24]={'0','O','X','O','o','X','O','X','O','X'};
     TEST_ASSERT_EQUAL(0,checkwin(sq_position));
 }
 
